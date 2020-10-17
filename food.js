@@ -29,7 +29,7 @@ export function draw(gameBoard) {
 function getRandomFoodPosition() {
   let newFoodPosition
   
-  // FOOD為空值，或FOOD為SNAKE時，隨機產生新的FOOD
+  // FOOD為空值，或FOOD在SNAKE的位置時，隨機產生新的FOOD
   while (newFoodPosition == null || onSnake(newFoodPosition)) {
     newFoodPosition = randomGridPosition()
   }
