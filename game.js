@@ -10,7 +10,7 @@ function main(currentTime) {
 	if (gameOver) {
 		// 按ok，重新載入該頁面
 		if (confirm('You lost. Press ok to restart.')) {
-		  window.location = '/'
+		  window.location = '/Snake_Game'
 		}
 		return
 	}
